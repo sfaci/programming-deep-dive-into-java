@@ -1,20 +1,19 @@
-package space.harbour.figures;
+package space.harbour.figures.domain;
 
 public class Square implements Figure {
+    private float side;
 
-    private int side;
-
-    public Square(int side) {
+    public Square(float side) {
         this.side = side;
     }
 
     @Override
-    public int area() {
+    public float getArea() {
         return side * side;
     }
 
     @Override
-    public int perimeter() {
+    public float getPerimeter() {
         return side * 4;
     }
 }
