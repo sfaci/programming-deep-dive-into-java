@@ -5,7 +5,6 @@ import com.almasb.fxgl.app.GameSettings;
 import com.almasb.fxgl.core.math.FXGLMath;
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.Entity;
-import com.almasb.fxgl.entity.components.CollidableComponent;
 import com.almasb.fxgl.input.Input;
 import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.physics.CollisionHandler;
@@ -35,6 +34,8 @@ public class Main extends GameApplication {
         settings.setHeight(600);
         settings.setTitle("Basic Game App");
         settings.setVersion("0.1");
+
+        settings.setMainMenuEnabled(true);
     }
 
     @Override
@@ -43,9 +44,9 @@ public class Main extends GameApplication {
         scoreText.setTranslateX(50);
         scoreText.setTranslateY(100);
         scoreText.textProperty().bind(
-                new ReadOnlyStringWrapper("Score: ").concat(
-                        FXGL.getWorldProperties().intProperty("score").asString()
-                ));
+            new ReadOnlyStringWrapper("Score: ").concat(
+                    FXGL.getWorldProperties().intProperty("score").asString()
+            ));
         FXGL.getGameScene().addUINode(scoreText);
     }
 
@@ -60,17 +61,16 @@ public class Main extends GameApplication {
                 .type(EntityType.PLAYER)
                 .at(300, FXGL.getSettings().getHeight() - 25)
                 .viewWithBBox(new Rectangle(25, 25, Color.BLUE))
-                .with(new CollidableComponent(true))
+                .collidable()
                 .buildAndAttach();
 
         enemies = new ArrayList<>();
-
         FXGL.getGameTimer().runAtInterval(() -> {
             Entity newEnemy = FXGL.entityBuilder()
                     .type(EntityType.ENEMY)
                     .at(FXGLMath.random(0, FXGL.getSettings().getWidth()), 0)
                     .viewWithBBox(new Rectangle(50, 50, Color.RED))
-                    .with(new CollidableComponent(true))
+                    .collidable()
                     .buildAndAttach();
             enemies.add(newEnemy);
         }, Duration.seconds(0.5));
@@ -104,7 +104,7 @@ public class Main extends GameApplication {
             protected void onCollision(Entity enemy, Entity player) {
                 enemy.removeFromWorld();
                 score += 1;
-                FXGL.getWorldProperties().setValue("score", score);
+                FXGL.set("score", score);
                 FXGL.play("blop.mp3");
             }
         });
