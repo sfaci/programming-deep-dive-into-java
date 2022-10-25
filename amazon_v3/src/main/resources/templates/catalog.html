@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon</title>
+</head>
+<body>
+<p>Aqui tienes el catálogo de mi web</p>
+<ul>
+    <li th:each="product : ${products}">
+        <a th:href="@{'product/' + ${product.id}}"><span th:text="${product.name}"></span></a>
+    </li>
+</ul>
+</body>
+</html>

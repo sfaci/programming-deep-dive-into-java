@@ -1,0 +1,7 @@
+<span th:replace="fragments/header.html" xmlns:th="http://www.w3.org/1999/xhtml"></span>
+<main>
+    <h1 th:text="${product.name}"></h1>
+    <p th:text="${product.description}"></p>
+    <a class="btn btn-sm btn-outline-primary" th:href="@{'/add-order/' + ${product.id}}">Buy</a>
+</main>
+<span th:replace="fragments/footer.html" xmlns:th="http://www.w3.org/1999/xhtml"></span>

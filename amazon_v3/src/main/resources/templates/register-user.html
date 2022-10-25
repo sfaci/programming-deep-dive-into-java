@@ -1,0 +1,22 @@
+<span th:replace="fragments/header.html"></span>
+<main>
+    <form th:action="@{/add-user}" method="post" th:object="${user}">
+        Nombre de usuario:
+        <input type="text" id="username" th:field="*{username}"/><br/>
+        Contraseña:
+        <input type="password" id="password" th:field="*{password}"/><br/>
+        Nombre completo:
+        <input type="text" id="name" th:field="*{name}"/><br/>
+        Dirección de e-mail:
+        <input type="text" id="email" th:field="*{email}"/><br/>
+        Fecha de nacimiento:
+        <input type="date" id="birthDate" th:field="*{birthDate}"/><br/>
+        <input type="submit" value="Crear cuenta"/>
+    </form>
+    <div th:if="${message}">
+        <div class="alert alert-success" role="alert">
+            <p th:text="${message}"></p>
+        </div>
+    </div>
+</main>
+<span th:replace="fragments/footer.html" xmlns:th="http://www.w3.org/1999/xhtml"></span>
