@@ -1,6 +1,6 @@
-package com.svalero.amazonapi.repository;
+package space.harbour.amazonapi.repository;
 
-import com.svalero.amazonapi.domain.User;
+import space.harbour.amazonapi.domain.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

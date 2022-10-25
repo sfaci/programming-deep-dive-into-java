@@ -1,4 +1,4 @@
-package com.svalero.amazonapi;
+package space.harbour.amazonapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

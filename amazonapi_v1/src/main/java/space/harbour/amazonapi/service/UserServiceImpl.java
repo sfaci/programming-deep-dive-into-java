@@ -1,8 +1,8 @@
-package com.svalero.amazonapi.service;
+package space.harbour.amazonapi.service;
 
-import com.svalero.amazonapi.domain.User;
-import com.svalero.amazonapi.exception.UserNotFoundException;
-import com.svalero.amazonapi.repository.UserRepository;
+import space.harbour.amazonapi.domain.User;
+import space.harbour.amazonapi.exception.UserNotFoundException;
+import space.harbour.amazonapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

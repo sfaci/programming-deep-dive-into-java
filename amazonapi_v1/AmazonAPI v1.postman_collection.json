@@ -115,23 +115,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8080/products?price=100",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"products"
-					],
-					"query": [
-						{
-							"key": "price",
-							"value": "100"
-						}
-					]
-				}
+				"url": "http://localhost:8080/products"
 			},
 			"response": []
 		},

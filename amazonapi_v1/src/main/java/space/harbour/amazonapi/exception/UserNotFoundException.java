@@ -1,4 +1,4 @@
-package com.svalero.amazonapi.exception;
+package space.harbour.amazonapi.exception;
 
 public class UserNotFoundException extends Exception {
 

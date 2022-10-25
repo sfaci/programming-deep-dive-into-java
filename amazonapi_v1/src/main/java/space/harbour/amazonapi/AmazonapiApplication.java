@@ -1,4 +1,4 @@
-package com.svalero.amazonapi;
+package space.harbour.amazonapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-package com.svalero.amazonapi.controller;
+package space.harbour.amazonapi.controller;
 
-import com.svalero.amazonapi.domain.User;
-import com.svalero.amazonapi.service.UserService;
+import space.harbour.amazonapi.domain.User;
+import space.harbour.amazonapi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

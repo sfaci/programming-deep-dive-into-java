@@ -1,4 +1,4 @@
-package com.svalero.amazonapi.domain;
+package space.harbour.amazonapi.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

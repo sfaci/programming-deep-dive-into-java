@@ -1,8 +1,8 @@
-package com.svalero.amazonapi.service;
+package space.harbour.amazonapi.service;
 
-import com.svalero.amazonapi.domain.Order;
-import com.svalero.amazonapi.domain.User;
-import com.svalero.amazonapi.repository.OrderRepository;
+import space.harbour.amazonapi.domain.Order;
+import space.harbour.amazonapi.domain.User;
+import space.harbour.amazonapi.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

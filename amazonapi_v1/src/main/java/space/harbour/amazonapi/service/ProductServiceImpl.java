@@ -1,8 +1,8 @@
-package com.svalero.amazonapi.service;
+package space.harbour.amazonapi.service;
 
-import com.svalero.amazonapi.domain.Product;
-import com.svalero.amazonapi.exception.ProductNotFoundException;
-import com.svalero.amazonapi.repository.ProductRepository;
+import space.harbour.amazonapi.domain.Product;
+import space.harbour.amazonapi.exception.ProductNotFoundException;
+import space.harbour.amazonapi.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

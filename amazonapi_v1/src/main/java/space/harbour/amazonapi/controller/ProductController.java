@@ -1,9 +1,9 @@
-package com.svalero.amazonapi.controller;
+package space.harbour.amazonapi.controller;
 
-import com.svalero.amazonapi.domain.Product;
-import com.svalero.amazonapi.dto.ErrorResponse;
-import com.svalero.amazonapi.exception.ProductNotFoundException;
-import com.svalero.amazonapi.service.ProductService;
+import space.harbour.amazonapi.domain.Product;
+import space.harbour.amazonapi.dto.ErrorResponse;
+import space.harbour.amazonapi.exception.ProductNotFoundException;
+import space.harbour.amazonapi.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
