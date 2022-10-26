@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "3f0e5ab8-fd7a-41df-9b31-5c76ec5f2dca",
+		"name": "TheZoo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "animals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mfsdfssdfdfilu\",\n    \"race\": \"sdfDsdfsdfog\",\n    \"weight\": 10.34,\n    \"maxSpeed\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/animals"
+			},
+			"response": []
+		},
+		{
+			"name": "animals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/animals"
+			},
+			"response": []
+		},
+		{
+			"name": "animals/{animalId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/animals/1"
+			},
+			"response": []
+		},
+		{
+			"name": "animals/{animalId}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/animals/1"
+			},
+			"response": []
+		}
+	]
+}
