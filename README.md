@@ -1,5 +1,5 @@
-# foundations-programming-java
-Sample projects for **Foundations of Programming: Java** module.
+# programming-deep-dive-into-java
+Sample projects for **Programming: Deep dive into Java** module.
 
 - _Hangman_: Java Syntax
 - _Figures_: Java OOP
